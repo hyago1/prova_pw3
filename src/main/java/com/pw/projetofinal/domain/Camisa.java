@@ -18,9 +18,7 @@ import com.pw.projetofinal.core.base.BaseEntity;
 @SQLDelete(sql = "UPDATE camisa SET deleted_at = CURRENT_TIMESTAMP where id=?")
 @SQLRestriction("deleted_at is null")
 public class Camisa extends BaseEntity {
-    @Id
-    @GeneratedValue(strategy = GenerationType.IDENTITY)
-    private Long id;
+
     private String imageURL;
 
     private String marca;
