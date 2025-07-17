@@ -1,7 +1,4 @@
 package com.pw.projetofinal.controller;
-
-import com.pw.projetofinal.dto.CamisaRequestDto;
-import com.pw.projetofinal.mapper.CamisaMapper;
 import com.pw.projetofinal.mapper.CamisaMapper;
 import com.pw.projetofinal.domain.Camisa;
 import com.pw.projetofinal.dto.CamisaResponseDto;
@@ -19,7 +16,7 @@ import java.util.List;
 public class camisaController {
 
     final CamisaService service;
-     final CamisaMapper mapper;
+    final CamisaMapper mapper;
 
     public camisaController(CamisaService service, CamisaMapper mapper) {
         this.service = service;
