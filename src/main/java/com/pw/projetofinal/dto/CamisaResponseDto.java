@@ -9,7 +9,11 @@ import org.springframework.hateoas.server.mvc.WebMvcLinkBuilder;
 
 @Data
 public class CamisaResponseDto extends RepresentationModel<CamisaResponseDto> {
-    private String nome;
+    private String marca;
+    private String tamanho;//gg, g, m, p, pp
+    private String categoria;
+    private Long isDeleted;
+    private Float valor;
 
     public void loadLinks(Camisa camisa) {
         this.add(WebMvcLinkBuilder.linkTo(camisaController.class).slash(camisa.getId()).withSelfRel());
