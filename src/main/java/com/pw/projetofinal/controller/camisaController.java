@@ -64,6 +64,7 @@ public class camisaController {
         return ResponseEntity.created(new URI("/pessoas/"+camisa.getId())).build();
     }
 
+//Deletar por ID
     @DeleteMapping("/{id}")
     public ResponseEntity<?> deleteJoiaById(@PathVariable long id) throws CamisaNotFoundExpection {
 
@@ -75,6 +76,7 @@ public class camisaController {
         return ResponseEntity.noContent().build();
     }
 
+    //Atualizar por ID
     @PutMapping("/{id}")
     public ResponseEntity<?> updateCamisa(@RequestBody Camisa c, @PathVariable long id){
 
